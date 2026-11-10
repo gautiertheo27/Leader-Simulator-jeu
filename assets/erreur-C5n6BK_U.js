@@ -1,4 +1,4 @@
-import{h as t}from"./dom-CBEe4wvu.js";import{t as a}from"./index-YRhgSLQ_.js";import"./accord-CA2CsvXE.js";function u(e){if(e instanceof Error)return e.message||e.name;if(typeof e=="string")return e;try{return JSON.stringify(e)??String(e)}catch{return String(e)}}function p(e,r,n={}){const s=e instanceof Error&&e.stack?e.stack.split(`
+import{h as t}from"./dom-CYODWbDX.js";import{t as a}from"./index-Bv0M1vdZ.js";import"./accord-jVGvJTpN.js";function u(e){if(e instanceof Error)return e.message||e.name;if(typeof e=="string")return e;try{return JSON.stringify(e)??String(e)}catch{return String(e)}}function p(e,r,n={}){const s=e instanceof Error&&e.stack?e.stack.split(`
 `).slice(0,8).join(`
 `):"",c=Object.entries(r.extra??{}).filter(([,o])=>o!=null).map(([o,l])=>`${o}: ${String(l)}`),i=(n.url??"").split(/[?#]/)[0];return["Leader Simulator : rapport d’erreur",`Version : ${n.version??"inconnue"}`,`Date : ${(n.when??new Date).toISOString()}`,`Où : ${r.where}`,...c,`Erreur : ${u(e)}`,i?`Page : ${i}`:"",n.ua?`Navigateur : ${n.ua}`:"",s?`Pile :
 ${s}`:""].filter(Boolean).join(`
